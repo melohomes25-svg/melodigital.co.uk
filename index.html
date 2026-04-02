@@ -27,13 +27,13 @@
       align-items: center;
       justify-content: flex-start;
       text-align: center;
-      padding-top: 40px;
+      padding-top: 20px; /* HIGHER */
     }
 
     .logo {
-      width: 300px;
-      max-width: 80%;
-      margin-bottom: 30px;
+      width: 400px; /* BIGGER */
+      max-width: 85%;
+      margin-bottom: 40px;
     }
 
     .content {
@@ -44,39 +44,51 @@
     .description {
       font-size: 20px;
       line-height: 1.6;
-      margin-bottom: 30px;
-      text-shadow: 0 2px 10px rgba(0,0,0,0.6);
+      margin-bottom: 35px;
+
+      /* 🔥 PREMIUM TEXT STYLE */
+      color: rgba(255,255,255,0.9);
+      font-weight: 500;
+      letter-spacing: 0.3px;
+
+      /* subtle glow like logo */
+      text-shadow:
+        0 2px 12px rgba(0,0,0,0.6),
+        0 0 8px rgba(255,255,255,0.08);
     }
 
     .contact {
       font-size: 18px;
-      margin-bottom: 20px;
+      margin-bottom: 22px;
     }
 
     .contact a {
       color: #6fc0ff;
       text-decoration: none;
       font-weight: 600;
+
+      /* slight glow */
+      text-shadow: 0 0 6px rgba(111,192,255,0.5);
     }
 
     .legal {
       font-size: 14px;
-      opacity: 0.85;
+      opacity: 0.8;
     }
 
     .legal a {
       margin: 0 10px;
-      color: #ddd;
+      color: rgba(255,255,255,0.75);
       text-decoration: none;
     }
 
     @media (max-width: 600px) {
       body {
-        padding-top: 20px;
+        padding-top: 10px;
       }
 
       .logo {
-        width: 220px;
+        width: 280px; /* scaled for mobile */
       }
 
       .description {
