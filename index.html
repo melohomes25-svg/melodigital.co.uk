@@ -13,9 +13,7 @@
     html, body {
       margin: 0;
       padding: 0;
-      width: 100%;
-      height: 100%;
-      overflow: hidden;
+      min-height: 100%;
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
       color: white;
     }
@@ -27,60 +25,47 @@
     }
 
     .page {
-      width: 100%;
-      height: 100vh;
+      min-height: 100vh;
       display: flex;
       flex-direction: column;
       align-items: center;
-      justify-content: flex-start;
-      padding-top: 0;
-      position: relative;
-    }
-
-    .logo-wrap {
-      width: 100%;
-      padding-top: 18px;
-      margin-bottom: 18px;
+      padding: 10px 20px 24px;
     }
 
     .logo {
-      width: 520px;
-      max-width: 82vw;
+      width: 440px;
+      max-width: 85vw;
       height: auto;
       display: block;
-      margin: 0 auto;
+      margin: 0 auto 18px;
     }
 
     .content {
       width: 100%;
       max-width: 760px;
-      padding: 0 24px;
     }
 
     .text-box {
-      display: inline-block;
-      max-width: 760px;
-      padding: 18px 22px;
-      background: rgba(10, 14, 18, 0.22);
-      backdrop-filter: blur(10px);
-      border: 1px solid rgba(255,255,255,0.06);
-      border-radius: 16px;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.28);
-      margin-bottom: 18px;
+      background: rgba(12, 16, 22, 0.28);
+      backdrop-filter: blur(6px);
+      border-radius: 14px;
+      padding: 18px 18px;
+      margin: 0 auto 18px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.28);
     }
 
     .description {
       margin: 0;
-      font-size: 24px;
+      font-size: 22px;
       line-height: 1.55;
       font-weight: 500;
-      letter-spacing: 0.2px;
       color: rgba(255,255,255,0.92);
-      text-shadow: 0 2px 14px rgba(0,0,0,0.5);
+      letter-spacing: 0.2px;
+      text-shadow: 0 2px 10px rgba(0,0,0,0.5);
     }
 
     .contact {
-      margin-bottom: 12px;
+      margin-bottom: 14px;
       font-size: 18px;
       font-weight: 600;
     }
@@ -94,52 +79,34 @@
     .legal {
       font-size: 14px;
       opacity: 0.82;
+      padding-bottom: 8px;
     }
 
     .legal a {
-      color: rgba(255,255,255,0.78);
+      color: rgba(255,255,255,0.8);
       text-decoration: none;
       margin: 0 10px;
     }
 
     @media (max-width: 900px) {
-      .logo-wrap {
-        padding-top: 10px;
-      }
-
       .logo {
-        width: 420px;
-        max-width: 84vw;
+        width: 380px;
       }
 
       .description {
-        font-size: 20px;
+        font-size: 19px;
       }
     }
 
     @media (max-width: 600px) {
-      html, body {
-        overflow-y: auto;
-      }
-
       .page {
-        min-height: 100vh;
-        height: auto;
-        padding-bottom: 24px;
-      }
-
-      .logo-wrap {
-        padding-top: 6px;
-        margin-bottom: 12px;
+        padding: 6px 14px 20px;
       }
 
       .logo {
-        width: 290px;
-        max-width: 86vw;
-      }
-
-      .content {
-        padding: 0 16px;
+        width: 300px;
+        max-width: 88vw;
+        margin-bottom: 14px;
       }
 
       .text-box {
@@ -154,6 +121,7 @@
 
       .contact {
         font-size: 16px;
+        margin-bottom: 12px;
       }
 
       .legal {
@@ -170,9 +138,7 @@
 
 <body>
   <div class="page">
-    <div class="logo-wrap">
-      <img src="logo-melo.png" class="logo" alt="Melo Digital Logo">
-    </div>
+    <img src="logo-melo.png" class="logo" alt="Melo Digital Logo">
 
     <div class="content">
       <div class="text-box">
