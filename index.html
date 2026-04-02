@@ -27,13 +27,15 @@
       align-items: center;
       justify-content: flex-start;
       text-align: center;
-      padding-top: 20px; /* HIGHER */
+
+      /* 👇 reduced top space (HALF of before) */
+      padding-top: 10px;
     }
 
     .logo {
-      width: 400px; /* BIGGER */
+      width: 420px; /* slightly bigger */
       max-width: 85%;
-      margin-bottom: 40px;
+      margin-bottom: 30px;
     }
 
     .content {
@@ -41,25 +43,34 @@
       padding: 0 20px;
     }
 
+    /* 🔥 NEW PREMIUM TEXT BLOCK */
+    .text-box {
+      background: rgba(10, 15, 20, 0.35);
+      backdrop-filter: blur(6px);
+      border-radius: 14px;
+      padding: 24px 20px;
+      margin-bottom: 30px;
+
+      box-shadow:
+        0 8px 30px rgba(0,0,0,0.4),
+        inset 0 0 20px rgba(255,255,255,0.03);
+    }
+
     .description {
       font-size: 20px;
       line-height: 1.6;
-      margin-bottom: 35px;
+      margin: 0;
 
-      /* 🔥 PREMIUM TEXT STYLE */
       color: rgba(255,255,255,0.9);
       font-weight: 500;
       letter-spacing: 0.3px;
 
-      /* subtle glow like logo */
-      text-shadow:
-        0 2px 12px rgba(0,0,0,0.6),
-        0 0 8px rgba(255,255,255,0.08);
+      text-shadow: 0 2px 12px rgba(0,0,0,0.6);
     }
 
     .contact {
       font-size: 18px;
-      margin-bottom: 22px;
+      margin-bottom: 20px;
     }
 
     .contact a {
@@ -67,7 +78,6 @@
       text-decoration: none;
       font-weight: 600;
 
-      /* slight glow */
       text-shadow: 0 0 6px rgba(111,192,255,0.5);
     }
 
@@ -84,19 +94,19 @@
 
     @media (max-width: 600px) {
       body {
-        padding-top: 10px;
+        padding-top: 6px; /* even tighter on mobile */
       }
 
       .logo {
-        width: 280px; /* scaled for mobile */
+        width: 300px;
       }
 
       .description {
         font-size: 16px;
       }
 
-      .contact {
-        font-size: 16px;
+      .text-box {
+        padding: 18px 14px;
       }
     }
   </style>
@@ -108,9 +118,11 @@
 
   <div class="content">
 
-    <div class="description">
-      We build simple, powerful apps designed for everyday use.
-      Focused on clarity, reliability, and real-world practicality.
+    <div class="text-box">
+      <div class="description">
+        We build simple, powerful apps designed for everyday use.
+        Focused on clarity, reliability, and real-world practicality.
+      </div>
     </div>
 
     <div class="contact">
