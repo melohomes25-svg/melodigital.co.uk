@@ -19,13 +19,9 @@
     }
 
     body {
-      background: url("background.png") no-repeat center center fixed;
+      background: url("background.png") no-repeat center center;
       background-size: cover;
       color: white;
-    }
-
-    a {
-      color: inherit;
     }
 
     .page {
@@ -33,7 +29,7 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      padding: 6px 20px 32px;
+      padding: 6px 20px 24px;
     }
 
     .logo {
@@ -46,30 +42,25 @@
 
     .content {
       width: 100%;
-      max-width: 980px;
+      max-width: 760px;
     }
 
-    .text-box,
-    .section-card,
-    .app-card,
-    .legal-card {
-      background: rgba(10, 14, 20, 0.28);
+    .text-box {
+      background: rgba(10, 14, 20, 0.25);
       backdrop-filter: blur(8px);
-      border-radius: 20px;
-      padding: 22px;
+      border-radius: 16px;
+      padding: 20px;
       margin: 0 auto 18px;
       box-shadow: 0 10px 30px rgba(0,0,0,0.35);
-      border: 1px solid rgba(255,255,255,0.06);
     }
 
     .description {
       margin: 0;
-      text-align: center;
       font-size: 22px;
       line-height: 1.6;
       font-weight: 600;
       letter-spacing: 0.4px;
-      background: linear-gradient(90deg, #d6dbe0, #ffffff, #c8ced6);
+      background: linear-gradient(90deg,#d6dbe0,#ffffff,#c8ced6);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       text-shadow:
@@ -77,137 +68,46 @@
         0 0 18px rgba(200,220,255,0.25);
     }
 
-    .top-nav {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      gap: 10px;
-      margin: 0 auto 18px;
+    .apps {
+      margin-top: 10px;
     }
 
-    .nav-link {
-      display: inline-block;
-      padding: 10px 16px;
-      border-radius: 999px;
-      text-decoration: none;
-      font-size: 14px;
-      font-weight: 700;
-      letter-spacing: 0.4px;
-      background: rgba(255,255,255,0.08);
-      border: 1px solid rgba(255,255,255,0.08);
-      color: #eef4ff;
-      transition: 0.2s ease;
-    }
-
-    .nav-link:hover {
-      background: rgba(255,255,255,0.14);
-      transform: translateY(-1px);
-    }
-
-    .section-label {
-      margin: 0 0 8px;
-      font-size: 13px;
-      font-weight: 800;
-      letter-spacing: 2px;
-      text-transform: uppercase;
-      color: rgba(180, 205, 235, 0.9);
-    }
-
-    .section-title {
-      margin: 0 0 10px;
-      font-size: 34px;
-      line-height: 1.15;
-      font-weight: 800;
-      color: #ffffff;
-    }
-
-    .section-text {
-      margin: 0;
-      font-size: 18px;
-      line-height: 1.7;
-      color: rgba(235, 242, 250, 0.92);
-    }
-
-    .section-text + .section-text {
-      margin-top: 14px;
-    }
-
-    .apps-grid {
-      display: grid;
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-      gap: 18px;
-      margin-top: 18px;
+    .app-card {
+      background: rgba(10, 14, 20, 0.25);
+      backdrop-filter: blur(8px);
+      border-radius: 16px;
+      padding: 18px;
+      margin-bottom: 14px;
+      text-align: left;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.35);
     }
 
     .app-card h3 {
-      margin: 0 0 10px;
-      font-size: 28px;
-      line-height: 1.2;
+      margin: 0 0 6px;
+      font-size: 20px;
     }
 
     .app-card p {
-      margin: 0 0 18px;
-      font-size: 17px;
-      line-height: 1.7;
-      color: rgba(235, 242, 250, 0.9);
+      margin: 0 0 10px;
+      font-size: 15px;
+      opacity: 0.9;
     }
 
-    .app-links {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-    }
-
-    .pill-link {
-      display: inline-block;
-      padding: 10px 14px;
-      border-radius: 999px;
-      text-decoration: none;
+    .app-card a {
       font-size: 14px;
-      font-weight: 700;
-      background: rgba(255,255,255,0.08);
-      border: 1px solid rgba(255,255,255,0.08);
-      color: #eef4ff;
-      transition: 0.2s ease;
-    }
-
-    .pill-link:hover {
-      background: rgba(255,255,255,0.14);
-    }
-
-    .legal-card h3 {
-      margin: 0 0 14px;
-      font-size: 28px;
-      line-height: 1.2;
-    }
-
-    .legal-card h4 {
-      margin: 22px 0 8px;
-      font-size: 18px;
-      line-height: 1.4;
-      color: #ffffff;
-    }
-
-    .legal-card p {
-      margin: 0;
-      font-size: 16px;
-      line-height: 1.75;
-      color: rgba(235, 242, 250, 0.9);
-    }
-
-    .legal-card p + p {
-      margin-top: 12px;
+      font-weight: 600;
+      text-decoration: none;
+      color: #6fc0ff;
     }
 
     .contact {
       margin-bottom: 14px;
-      text-align: center;
       font-size: 18px;
       font-weight: 600;
     }
 
     .contact a {
-      background: linear-gradient(90deg, #6fc0ff, #a8ddff);
+      background: linear-gradient(90deg,#6fc0ff,#a8ddff);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       text-decoration: none;
@@ -216,95 +116,16 @@
         0 0 20px rgba(111,192,255,0.3);
     }
 
-    .footer-links {
-      text-align: center;
+    .legal {
       font-size: 14px;
-      opacity: 0.9;
+      opacity: 0.85;
       padding-bottom: 8px;
     }
 
-    .footer-links a {
-      color: rgba(220,225,230,0.78);
+    .legal a {
+      color: rgba(220,225,230,0.7);
       text-decoration: none;
       margin: 0 10px;
-      transition: 0.2s ease;
-    }
-
-    .footer-links a:hover {
-      color: white;
-      text-shadow: 0 0 8px rgba(255,255,255,0.3);
-    }
-
-    @media (max-width: 900px) {
-      .logo {
-        width: 380px;
-      }
-
-      .description {
-        font-size: 19px;
-      }
-
-      .section-title {
-        font-size: 30px;
-      }
-
-      .apps-grid {
-        grid-template-columns: 1fr;
-      }
-    }
-
-    @media (max-width: 600px) {
-      .page {
-        padding: 4px 14px 24px;
-      }
-
-      .logo {
-        width: 300px;
-        max-width: 88vw;
-        margin-bottom: 10px;
-      }
-
-      .text-box,
-      .section-card,
-      .app-card,
-      .legal-card {
-        padding: 18px;
-        margin-bottom: 14px;
-        border-radius: 18px;
-      }
-
-      .description {
-        font-size: 17px;
-      }
-
-      .section-title {
-        font-size: 28px;
-      }
-
-      .section-text,
-      .app-card p,
-      .legal-card p {
-        font-size: 16px;
-      }
-
-      .app-card h3,
-      .legal-card h3 {
-        font-size: 24px;
-      }
-
-      .contact {
-        font-size: 16px;
-        margin-bottom: 12px;
-      }
-
-      .footer-links {
-        font-size: 12px;
-      }
-
-      .footer-links a {
-        display: inline-block;
-        margin: 4px 8px;
-      }
     }
   </style>
 </head>
@@ -314,210 +135,40 @@
     <img src="logo-melo.png" class="logo" alt="Melo Digital Logo">
 
     <div class="content">
-      <div class="top-nav">
-        <a class="nav-link" href="#about">About</a>
-        <a class="nav-link" href="#apps">Our Apps</a>
-        <a class="nav-link" href="#privacy">Privacy Policy</a>
-        <a class="nav-link" href="#terms">Terms &amp; Conditions</a>
-      </div>
-
       <div class="text-box">
         <p class="description">
-          Melo Digital Ltd builds simple, powerful apps designed for everyday use,
-          focused on clarity, reliability, and real-world practicality.
+          We build simple, powerful apps designed for everyday use.
+          Focused on clarity, reliability, and real-world practicality.
         </p>
       </div>
 
-      <div class="section-card" id="about">
-        <p class="section-label">About Melo Digital Ltd</p>
-        <h2 class="section-title">Independent app products under one company</h2>
-        <p class="section-text">
-          Melo Digital Ltd is the parent company behind a growing range of mobile apps,
-          including LandlordOne, TruTake and TruQuote.
-        </p>
-        <p class="section-text">
-          Each app has its own purpose, features and legal information, while all are
-          owned and operated by Melo Digital Ltd.
-        </p>
-      </div>
-
-      <div class="section-card" id="apps">
-        <p class="section-label">Our Apps</p>
-        <h2 class="section-title">Products built by Melo Digital Ltd</h2>
-
-        <div class="apps-grid">
-          <div class="app-card" id="landlordone">
-            <h3>LandlordOne</h3>
-            <p>
-              A landlord portfolio and record-keeping app designed to help users manage
-              properties, rent, compliance and expenses in one clear place.
-            </p>
-            <div class="app-links">
-              <a class="pill-link" href="#landlordone-info">App Info</a>
-            </div>
-          </div>
-
-          <div class="app-card" id="trutake">
-            <h3>TruTake</h3>
-            <p>
-              A records and money-tracking app for sole traders, helping users record
-              income, receipts and useful business information in a simple way.
-            </p>
-            <div class="app-links">
-              <a class="pill-link" href="#trutake-info">App Info</a>
-            </div>
-          </div>
-
-          <div class="app-card" id="truquote">
-            <h3>TruQuote</h3>
-            <p>
-              A quoting and invoicing app built to help users create professional
-              documents quickly and keep business admin straightforward.
-            </p>
-            <div class="app-links">
-              <a class="pill-link" href="#truquote-info">App Info</a>
-            </div>
-          </div>
+      <div class="apps">
+        <div class="app-card">
+          <h3>LandlordOne</h3>
+          <p>Property and rent management for landlords.</p>
+          <a href="landlordone.html">View App</a>
         </div>
-      </div>
 
-      <div class="section-card" id="landlordone-info">
-        <p class="section-label">App Information</p>
-        <h2 class="section-title">LandlordOne</h2>
-        <p class="section-text">
-          LandlordOne is owned and operated by Melo Digital Ltd.
-        </p>
-        <p class="section-text">
-          App-specific legal information, including LandlordOne terms and privacy details,
-          is provided within the app itself.
-        </p>
-      </div>
+        <div class="app-card">
+          <h3>TruTake</h3>
+          <p>Simple income and records tracking for sole traders.</p>
+          <a href="#">Coming soon</a>
+        </div>
 
-      <div class="section-card" id="trutake-info">
-        <p class="section-label">App Information</p>
-        <h2 class="section-title">TruTake</h2>
-        <p class="section-text">
-          TruTake is owned and operated by Melo Digital Ltd.
-        </p>
-        <p class="section-text">
-          App-specific legal information, including TruTake terms and privacy details,
-          is provided within the app itself or in its dedicated app materials.
-        </p>
-      </div>
-
-      <div class="section-card" id="truquote-info">
-        <p class="section-label">App Information</p>
-        <h2 class="section-title">TruQuote</h2>
-        <p class="section-text">
-          TruQuote is owned and operated by Melo Digital Ltd.
-        </p>
-        <p class="section-text">
-          App-specific legal information, including TruQuote terms and privacy details,
-          is provided within the app itself or in its dedicated app materials.
-        </p>
-      </div>
-
-      <div class="legal-card" id="privacy">
-        <h3>Privacy Policy – Melo Digital Ltd</h3>
-
-        <h4>1. Information We Collect</h4>
-        <p>
-          Melo Digital Ltd operates melodigital.co.uk. We do not collect, store or
-          process personal data through this website.
-        </p>
-        <p>
-          This website does not use tracking cookies, analytics tools or contact forms.
-        </p>
-
-        <h4>2. Third-Party Links</h4>
-        <p>
-          This website may contain links to our mobile applications, including
-          LandlordOne, TruTake and TruQuote. Each application operates independently
-          and may have its own privacy information.
-        </p>
-
-        <h4>3. Data Stored in Our Apps</h4>
-        <p>
-          Our mobile applications may store user information locally on the device,
-          depending on the app. Please refer to the relevant app information for further
-          details.
-        </p>
-
-        <h4>4. Security</h4>
-        <p>
-          As we do not collect or process personal data through this website, no personal
-          website user data is stored by us through this site.
-        </p>
-
-        <h4>5. Contact</h4>
-        <p>
-          Melo Digital Ltd<br>
-          Company Number: 17039994<br>
-          Email: support@melodigital.co.uk
-        </p>
-      </div>
-
-      <div class="legal-card" id="terms">
-        <h3>Terms &amp; Conditions – Melo Digital Ltd</h3>
-
-        <h4>1. About Us</h4>
-        <p>
-          This website is operated by Melo Digital Ltd, company number 17039994.
-        </p>
-
-        <h4>2. Use of This Website</h4>
-        <p>
-          This website is provided for general informational purposes only. You agree
-          not to use the website for any unlawful purpose or attempt to gain unauthorised
-          access to the website or its systems.
-        </p>
-
-        <h4>3. No Reliance on Information</h4>
-        <p>
-          The content on this website is provided for general information only and should
-          not be relied upon as professional, legal, financial or technical advice.
-        </p>
-
-        <h4>4. Mobile Applications</h4>
-        <p>
-          Melo Digital Ltd develops and operates mobile applications including, but not
-          limited to, LandlordOne, TruTake and TruQuote. Each application operates as a
-          separate service and may have its own terms and privacy information.
-        </p>
-
-        <h4>5. Limitation of Liability</h4>
-        <p>
-          To the fullest extent permitted by law, Melo Digital Ltd shall not be liable
-          for any loss or damage arising from the use of this website or reliance on any
-          information provided on this website.
-        </p>
-
-        <h4>6. External Links</h4>
-        <p>
-          This website may contain links to third-party services or app stores. We are
-          not responsible for their content, availability or policies.
-        </p>
-
-        <h4>7. Changes to These Terms</h4>
-        <p>
-          We may update these Terms &amp; Conditions from time to time. Continued use of
-          this website constitutes acceptance of any revised version.
-        </p>
-
-        <h4>8. Contact</h4>
-        <p>
-          Email: support@melodigital.co.uk
-        </p>
+        <div class="app-card">
+          <h3>TruQuote</h3>
+          <p>Create professional quotes and invoices in seconds.</p>
+          <a href="#">Coming soon</a>
+        </div>
       </div>
 
       <div class="contact">
         <a href="mailto:support@melodigital.co.uk">support@melodigital.co.uk</a>
       </div>
 
-      <div class="footer-links">
-        <a href="#apps">Our Apps</a>
-        <a href="#privacy">Privacy Policy</a>
-        <a href="#terms">Terms &amp; Conditions</a>
+      <div class="legal">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms &amp; Conditions</a>
       </div>
     </div>
   </div>
